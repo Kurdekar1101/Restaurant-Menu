@@ -1,0 +1,114 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.form-container{
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form{
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0,0,0,.1);
+    text-align: center;
+}
+h2{
+    margin-bottom: 20px;
+    color: #222;
+    font-size: 25px;
+    font-weight: 600;
+}
+.form-group{
+    margin-bottom: 15px;
+    text-align: left;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+}
+/* Remove arrow of number input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input{
+    width: 100%;
+    padding :10px 15px;
+    border: 1px solid #a8a8a8;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    outline: none;
+    font-size: 16px;
+}
+button{
+    width: 100%;
+    padding: 12px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s ease;
+}
+button:hover{
+    background-color: rgb(196, 57, 7);
+}
+
+.login-form p{
+    margin-top: 20px;
+}
+.login-form a{
+    color: #0983e2;
+    text-decoration: none;
+}
+
+.otp-form p{
+    font-size: 15px;
+}
+.otp-inputs{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.otp-input{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+.otp-input:focus{
+    border-color: #0983e2;
+    box-shadow: 0 0 5px #0984e292;
+}
+
+.logo img{
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+

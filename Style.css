@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+
+}
+
+nav{
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    height: 50px;
+}
+.nav-right{
+    display: flex;
+    gap: 1.5rem;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-right: 20px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s;
+}
+
+.nav-links li a:hover{
+    color: orangered;
+}
+
+.nav-logo{
+    margin-right: 1em;
+    
+}
+.nav-logo img , .logo-section img{
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.login{
+    background-color:orangered;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+.login a{
+    color: white;
+    text-decoration: none;
+}
+
+/* OFFER SECTION */
+.offer-section{
+    background-color: #333;
+    display: flex;
+    padding: 2em;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/images5/4K-Food-Wallpaper-3840x2160-1-620x349.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.offercheckout-btn{
+    background-color: orangered;;
+    align-self: flex-end;
+    color: White;
+    border: 2px solid white;
+    padding: 1em 2em;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+/* OUR MENU */
+.menu-section{
+    padding: 60px 20px;
+}
+.menu-section h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.menu-section h2::after{   /*small line below OurMenu*/
+    content: "";  /*Mandatory to use*/
+    width: 60px;
+    height: 4px;
+    background-color: orangered;
+    display: block;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/*BESTSELLER*/
+.menu-category{
+    margin: 10px 30px 50px 30px;
+    background-color: #eee;
+}
+.category-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.view-all-btn{
+    padding: 7px 14px;
+    margin-right: 20px;
+    background-color: black;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+.view-all-btn:hover{
+    background-color: rgb(77, 76, 76);
+}
+
+.menu-category h3{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-left: 4px solid orangered;
+}
+.menu-items{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 30px;
+}
+.menu-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+.menu-card:hover{
+    cursor: pointer;
+}
+.menu-card img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+.menu-card-content{
+    padding: 10px 5px;
+}
+.menu-card-content h4{
+    margin: 0 0 10px;
+    font-size: 1.25rem;
+    color: orangered;
+}
+.menu-card-content p{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #666;
+}
+.menu-card-content span{
+    font-weight: bold;
+    color: #333;
+}
+.cta-button{
+    background-color: #333;
+    color: white;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 1em; 
+    transition: background-color .2s;
+}
+.cta-button:hover{
+    cursor: pointer;
+    background-color: rgb(104, 102, 102);
+}
+
+/* FOOTER */
+.footer{
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px 20px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.footer-section{
+    flex: 1 1 250px;
+    margin: 20px 10px;
+}
+.footer-section h3{
+    color: orangered;
+    padding-bottom: 10px;
+}
+.footer-logo{
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+}
+.footer-links li{
+    margin-bottom: 10px;
+}
+.footer-links li a{
+    text-decoration: none;
+    color: white;
+}
+.social-links{
+    margin-bottom: 15px;
+}
+.social-link{
+    color: white;
+    text-decoration: none;
+}
+.subscribe-form{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+.subscribe-form input[type="email"]{
+    flex: 1 1 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+.subscribe-form button{
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.footer-bottom{
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+}
+.footer-bottom a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}

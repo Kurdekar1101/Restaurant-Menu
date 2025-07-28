@@ -1,0 +1,27 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    height: 10rem;
+    border: 2px solid #eee;
+    border-radius: 30px;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    flex-direction: column;
+
+}
+section h2{
+    margin-bottom: 20px;
+    color: #222;
+    font-size: 25px;
+    font-weight: 600;
+}
+section p{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #666;
+}
+section a{
+    color: orangered;
+}

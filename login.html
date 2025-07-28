@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="user-registration.css" />
+    <link rel="stylesheet" href="signup.css" >
+    <link rel="stylesheet" href="Style.css">
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="Restaurent.html">
+            <img
+              src="https://logocreator.io/wp-content/uploads/2024/01/food-logo-ideas-1.jpg.webp"
+              alt="shop-logo"
+              class="shop-logo"
+          /></a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="form-container">
+      <form class="login-form" onsubmit="redirectToOTPRegister(event)">
+        <h2>Welcome Back!</h2>
+        <div class="form-group">
+          <label for="username"><b>Mobile Number : </b></label>
+          <input
+            type="number"
+            id="mobile-number"
+            name="mobile-number"
+            required
+            placeholder="Enter your mobile number"
+          />
+        </div>
+        <button type="submit">Login</button>
+        <p>New to our restaurant? <a href="signup.html">Sign up</a></p>
+        <script>
+          function redirectToOTPRegister(event) {
+            event.preventDefault();
+            window.location.href = "otpregister.html";
+          }
+        </script>
+      </form>
+    </div>
+  </body>
+</html>
