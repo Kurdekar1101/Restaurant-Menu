@@ -8,7 +8,7 @@
         "trending": "yes",
         "best_seller": "yes",
         "rating": 4.8,
-        "imageurl": "https://placehold.co/150x80?text=Paneer+Butter+Masala",
+        "imageurl": "https://cdn.zeptonow.com/production///tr:w-600,ar-100-100,pr-true,f-auto,q-80/web/recipes/paneer-butter-masala.png",
         "category": "main course"
     },
     {
@@ -20,7 +20,7 @@
         "trending": "yes",
         "best_seller": "yes",
         "rating": 4.7,
-        "imageurl": "https://placehold.co/150x80?text=Chole+Bhature",
+        "imageurl": "https://images.hindi.news18.com/ibnkhabar/uploads/2021/06/chole-bhature.jpg",
         "category": "main course"
     },
     {
@@ -32,7 +32,7 @@
         "trending": "no",
         "best_seller": "no",
         "rating": 4.5,
-        "imageurl": "https://placehold.co/150x80?text=Palak+Paneer",
+        "imageurl": "https://sandhyahariharan.co.uk/wp-content/uploads/2020/08/palak-paneer-instant-pot.jpg",
         "category": "main course"
     },
     {
@@ -44,7 +44,7 @@
         "trending": "no",
         "best_seller": "yes",
         "rating": 4.6,
-        "imageurl": "https://placehold.co/150x80?text=Aloo+Gobi",
+        "imageurl": "https://www.cookingandme.com/wp-content/uploads/2014/07/14523274883_3b6177e82b_z-427x375.jpg",
         "category": "main course"
     },
     {
@@ -56,7 +56,7 @@
         "trending": "yes",
         "best_seller": "yes",
         "rating": 4.7,
-        "imageurl": "https://placehold.co/150x80?text=Vegetable+Biryani",
+        "imageurl": "https://t3.ftcdn.net/jpg/09/82/71/66/360_F_982716634_04UFwbDpbgF083Yoc7B0PrXPlQLMDjJW.jpg",
         "category": "main course"
     },
     {
@@ -68,7 +68,7 @@
         "trending": "yes",
         "best_seller": "no",
         "rating": 4.8,
-        "imageurl": "https://placehold.co/150x80?text=Dal+Makhan",
+        "imageurl": "https://rumkisgoldenspoon.com/wp-content/uploads/2021/02/Dal-makhani-ki-recipe.jpg",
         "category": "main course"
     },
     {
@@ -80,7 +80,7 @@
         "trending": "yes",
         "best_seller": "yes",
         "rating": 4.6,
-        "imageurl": "https://placehold.co/150x80?text=Samosa",
+        "imageurl": "https://images.pexels.com/photos/14477873/pexels-photo-14477873.jpeg?cs=srgb&dl=pexels-karthikeyan-anand-271239097-14477873.jpg&fm=jpg",
         "category": "starter"
     },
     {
@@ -92,7 +92,7 @@
         "trending": "no",
         "best_seller": "yes",
         "rating": 4.7,
-        "imageurl": "https://placehold.co/150x80?text=Paneer+Tikka",
+        "imageurl": "https://spicecravings.com/wp-content/uploads/2020/10/Paneer-Tikka-Featured-1.jpg",
         "category": "starter"
     },
     {
@@ -104,7 +104,7 @@
         "trending": "no",
         "best_seller": "yes",
         "rating": 4.7,
-        "imageurl": "https://placehold.co/150x80?text=Pav+Bhaji",
+        "imageurl": "https://thumbs.dreamstime.com/b/pav-bhaji-served-buttered-bread-steel-plate-pav-bhaji-served-buttered-bread-steel-plate-380631900.jpg",
         "category": "main course"
     },
     {
@@ -116,7 +116,7 @@
         "trending": "no",
         "best_seller": "yes",
         "rating": 4.8,
-        "imageurl": "https://placehold.co/150x80?text=Pani+Puri",
+        "imageurl": "https://gheespot.com/wp-content/uploads/2020/10/Pani-Puri-min-8-scaled-1.jpeg",
         "category": "starter"
     },
     {
@@ -128,7 +128,7 @@
         "trending": "no",
         "best_seller": "no",
         "rating": 4.6,
-        "imageurl": "https://placehold.co/150x80?text=Dhokla",
+        "imageurl": "https://t4.ftcdn.net/jpg/10/41/99/53/360_F_1041995329_Y948A29Hru2TXn8JgkWMwJmIVauyQ9jq.jpg",
         "category": "starter"
     },
     {
@@ -140,7 +140,7 @@
         "trending": "no",
         "best_seller": "no",
         "rating": 4.5,
-        "imageurl": "https://placehold.co/150x80?text=Methi+Thepla",
+        "imageurl": "https://thumbs.dreamstime.com/b/indian-parantha-stuffed-indian-bread-methi-thepla-stack-indian-flatbread-methi-paratha-fenugreek-gujarati-thepla-potato-125773599.jpg",
         "category": "main course"
     },
     {
@@ -152,7 +152,7 @@
         "trending": "no",
         "best_seller": "yes",
         "rating": 4.6,
-        "imageurl": "https://placehold.co/150x80?text=Bhel+Puri",
+        "imageurl": "https://www.masala.tv/wp-content/uploads/2020/05/bhel-puri-548.jpg",
         "category": "starter"
     },
     {
@@ -164,7 +164,7 @@
         "trending": "no",
         "best_seller": "no",
         "rating": 4.5,
-        "imageurl": "https://placehold.co/150x80?text=Vegetable+Manchurian",
+        "imageurl": "https://media.istockphoto.com/id/1208083887/photo/freshly-prepared-veg-manchurian-with-a-bowl-of-fried-rice.jpg?s=612x612&w=0&k=20&c=nTtgKk-SSQAh1E0Pz8SnpGjqMRSIIXM6XiDHIsd5LDQ=",
         "category": "starter"
     },
     {
@@ -176,7 +176,7 @@
         "trending": "yes",
         "best_seller": "yes",
         "rating": 4.8,
-        "imageurl": "https://placehold.co/150x80?text=Chaat",
+        "imageurl": "https://thumbs.dreamstime.com/b/indian-tea-time-snacks-chole-chaat-made-boiled-chickpea-curry-samosa-curd-mint-chutney-tamarind-chutney-indian-snacks-chole-109155914.jpg",
         "category": "starter"
     },
     {
@@ -188,7 +188,7 @@
         "trending": "no",
         "best_seller": "no",
         "rating": 4.4,
-        "imageurl": "https://placehold.co/150x80?text=Aloo+Tikki",
+        "imageurl": "https://media.istockphoto.com/id/1204868245/photo/street-food-of-india-potato-aloo-tikki-served-with-yogurt-closeup-in-a-plate-horizontal.jpg?s=612x612&w=0&k=20&c=oqTRL6H6nJa4iukd6DxOAw9fTwRb0NV0fBYhVrVYZLw=",
         "category": "starter"
     },
     {
@@ -200,7 +200,7 @@
         "trending": "no",
         "best_seller": "no",
         "rating": 4.6,
-        "imageurl": "https://placehold.co/150x80?text=Kadhi+Pakora",
+        "imageurl": "https://i.pinimg.com/736x/c2/5b/44/c25b441dc12a67a65680b241b9a6806a.jpg",
         "category": "main course"
     },
     {
@@ -212,7 +212,7 @@
       "trending": "yes",
       "best_seller": "yes",
       "rating": 4.7,
-      "imageurl": "https://placehold.co/150x80?text=Masala+Chai",
+      "imageurl": "https://goqii.com/blog/wp-content/uploads/shutterstock_1024718095-1024x682.jpg",
       "category": "beverages"
     },
     {
@@ -224,7 +224,7 @@
       "trending": "no",
       "best_seller": "no",
       "rating": 4.5,
-      "imageurl": "https://placehold.co/150x80?text=Iced+Lemon+Tea",
+      "imageurl": "https://media.istockphoto.com/id/497892585/photo/homemade-iced-tea-with-lemons.jpg?s=612x612&w=0&k=20&c=bJ9exSdr4HCoTDZvkxt-RkoAlgTtgUxaSaa2hqEQbhU=",
       "category": "beverages"
     },
     {
@@ -236,7 +236,7 @@
       "trending": "no",
       "best_seller": "yes",
       "rating": 4.8,
-      "imageurl": "https://placehold.co/150x80?text=Mango+Lassi",
+      "imageurl": "https://media.istockphoto.com/id/1365859011/photo/drink-mango-lassi-in-two-glasses-on-rustic-concrete-table-with-fresh-ripe-cut-manfo-from-above.jpg?s=612x612&w=0&k=20&c=uHnr_0raQDe2sgUYHdP5GSa2raaj3ILG4m1cmFHtVJA=",
       "category": "beverages"
     },
     {
@@ -248,7 +248,7 @@
       "trending": "yes",
       "best_seller": "yes",
       "rating": 4.6,
-      "imageurl": "https://placehold.co/150x80?text=Cold+Coffee",
+      "imageurl": "https://skydecklounge.in/wp-content/uploads/2022/01/Cold-Coffee-with-Ice-Cream.jpg",
       "category": "beverages"
     },
     {
@@ -260,7 +260,7 @@
       "trending": "no",
       "best_seller": "no",
       "rating": 4.2,
-      "imageurl": "https://placehold.co/150x80?text=Sweet+Lassi",
+      "imageurl": "https://media.istockphoto.com/id/1008799838/photo/image-of-a-glass-of-lassi-made-from-milk-curd.jpg?s=612x612&w=0&k=20&c=L--UXX-L2bsK6Jy-mEigONFj9QEJyvU8b77FJnBLpBg=",
       "category": "beverages"
     },
     {
@@ -272,7 +272,7 @@
       "trending": "no",
       "best_seller": "no",
       "rating": 4.4,
-      "imageurl": "https://placehold.co/150x80?text=Fresh+Lime+Soda",
+      "imageurl": "https://www.thevellorekitchen.in/wp-content/uploads/2023/01/Lime-Soda-Sweet.jpg",
       "category": "beverages"
     },
     {
@@ -284,7 +284,7 @@
       "trending": "no",
       "best_seller": "no",
       "rating": 4.3,
-      "imageurl": "https://placehold.co/150x80?text=Apple+Cider+Vinegar+Drink",
+      "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7nOt8TJjp_bi8GVysAeIFt1eLLqYN6e6A8A&s",
       "category": "beverages"
     }
   ]

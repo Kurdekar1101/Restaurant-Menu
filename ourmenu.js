@@ -61,24 +61,26 @@ function createMenuItem(item){
               <h4>${item.title}</h4>
               <p>${item.description}</p>
               <span
-                >Price: <strike class="strike-price">$${item.actual_price}</strike> $${item.selling_price}
+                >Price: <strike class="strike-price">Rs.${item.actual_price}</strike> Rs.${item.selling_price}
               </span>
             </div>
             <div onclick = "addtoCart('${item.id}', '${item.selling_price}', '${item.title}', '${item.imageurl}')" class="add-to-cart-btn">
-              <button class="cta-button">Add to Cart</button>
+            
+            <button onclick="addToCart('Pizza', 200)" class="cta-button">Add to Cart</button>
             </div>
           </div>`;
           return html;
+        //   <button class="cta-button">Add to Cart</button>
 }
 
-function addtoCart(itemId,itemPrice,itemTitle,itemImageUrl){
+
+function addtoCart(itemId, itemPrice, itemTitle, itemImageUrl) {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     const itemIndex = cart.findIndex(item => item.id === itemId);
 
-    if(itemIndex >-1){
-        cart[itemIndex].quantity +=1;
-    }
-    else{
+    if (itemIndex > -1) {
+        cart[itemIndex].quantity += 1;
+    } else {
         cart.push({
             id: itemId,
             price: itemPrice,
@@ -87,7 +89,8 @@ function addtoCart(itemId,itemPrice,itemTitle,itemImageUrl){
             quantity: 1
         });
     }
-    localStorage.setItem("cart",JSON.stringify(cart));
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(itemTitle + " added to cart!");
 }
 
 fetchFoodItems();
