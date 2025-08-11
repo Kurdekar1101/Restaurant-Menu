@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Order Status</title>
     <link rel="stylesheet" href="Style.css">
-    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="order.css">
 </head>
 <body>
     <header>
@@ -20,7 +18,7 @@
                     <li><a href="#offers">Our Offers</a></li>
                     <li><a href="knowus.html">Know Us</a></li>
                     <li><a href="order.html">Your Order</a></li>
-                    <li><a href="#cart">Cart</a></li>
+                    <li><a href="cart.html">Cart</a></li>
                 </ul>
                 <div class="login">
                     <a href="signup.html">Login / SignUp</a>
@@ -28,19 +26,13 @@
             </div>
         </nav>
     </header>
-
-    
-
-    <section id="cart-section">
-    <h2>Your Cart</h2>
-    <div id="cart-container">
-        <p>Your cart is empty.Explore our <a href="ourmenu.html">menu </a>section</p>
+    <div id="yourorder">
+    <h2>Your Order</h2>
+    <div id="order-details"></div>
+    <div class="status">Status: Delivered</div>
     </div>
-</section>
 
-    
-
-    <footer class="footer">
+     <footer class="footer">
       <div class="footer-content">
         <!-- Logo Section -->
         <div class="footer-section logo-section">
@@ -51,9 +43,9 @@
         <div class="footer-section links-section">
           <h3>Quick Links</h3>
           <ul class="footer-links" type="none">
-            <li><a href="ourmenu.html">Our Menu</a></li>
+            <li><a href="#menu">Our Menu</a></li>
             <li><a href="#offers">Our Offers</a></li>
-            <li><a href="knowus.html">Know What We Have Achieved</a></li>
+            <li><a href="#about">Know What We Have Achieved</a></li>
           </ul>
         </div>
         <!-- Social & Subscription Section -->
@@ -79,11 +71,55 @@
           <a href="#reserved">All Rights Reserved</a>
         </p>
 
+       
+
       </div>
 
     </footer>
 
-    <script src="cart.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let orderDetails = JSON.parse(localStorage.getItem("orderDetails")) || [];
+            if (orderDetails.length === 0) {
+                document.getElementById("order-details").innerHTML = "<p>No order found.</p>";
+                return;
+            }
 
+            let tableHTML = `
+                <table>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+            `;
+
+            let grandTotal = 0;
+
+            orderDetails.forEach(item => {
+                let total = item.price * item.quantity;
+                grandTotal += total;
+                tableHTML += `
+                    <tr>
+                        <td>${item.title}</td>
+                        <td>${item.quantity}</td>
+                        <td>₹${item.price}</td>
+                        <td>₹${total}</td>
+                    </tr>
+                `;
+            });
+
+            tableHTML += `
+                <tr>
+                    <td colspan="3" align="right"><strong>Grand Total</strong></td>
+                    <td><strong>₹${grandTotal}</strong></td>
+                </tr>
+                </table>
+            `;
+
+            document.getElementById("order-details").innerHTML = tableHTML;
+        });
+    </script>
 </body>
 </html>

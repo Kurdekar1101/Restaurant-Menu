@@ -79,9 +79,26 @@ table {
     transition: background-color 0.2s ease;
   }
 
-  #cartTable button:hover{
+  #cartTable button:hover,
+  #checkoutBtn:hover
+  {
     background-color: rgb(94, 223, 94);
     color: black;
+  }
+
+  #btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #checkoutBtn{
+    background-color: orangered;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
   }
 
   

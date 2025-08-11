@@ -1,0 +1,59 @@
+
+        
+        #yourorder{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        table {
+            margin: 10px 0;
+            border-collapse: collapse;
+            width: 90%;
+            
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            
+        }
+        th {
+            background-color: orangered;
+        }
+        .status {
+            margin: 20px 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: green;
+        }
+
+        h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+h2::after{   /*small line below OurMenu*/
+    content: "";  /*Mandatory to use*/
+    width: 60px;
+    height: 4px;
+    background-color: orangered;
+    display: block;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+#order-details{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+        /* <div id="yourorder">
+    <h2>Your Order</h2>
+    <div id="order-details"></div>
+    <div class="status">Status: Delivered</div>
+    </div> */
