@@ -98,33 +98,39 @@ fetchFoodItems();
 // Search functionality
 
 function searchItems(query){
-    const searchContainer = document.getElementById('search-items').querySelector('.ourmenu-items');
+    const searchSection = document.getElementById('search-items');
+    const searchContainer = searchSection.querySelector('.ourmenu-items');
+    
     searchContainer.innerHTML = "";
+
     if(query.length < 2){
+        searchSection.style.display = "none";   // hide if less than 2 letters
         return;
     }
 
-    const filteredItems = foodItems.filter(item=> 
+    const filteredItems = foodItems.filter(item => 
         item.title.toLowerCase().includes(query.toLowerCase())
     );
 
+    searchSection.style.display = "block";  // show when searching
+
     if(filteredItems.length === 0){
-        searchContainer.innerHTML = "<p> No items found</p>";
+        searchContainer.innerHTML = "<p>No items found</p>";
     }
     else{
-        const searchHTML = filteredItems.map(items => createMenuItem(items)).join("");
+        const searchHTML = filteredItems.map(item => createMenuItem(item)).join("");
         searchContainer.innerHTML = searchHTML;
     }
 }
+
+
 let searchTimeout = null;
 document.querySelector(".search-input").addEventListener("input", (event)=>{
-    const query = event.target.value;
-    //searchItems(query);
-    if(query){
-        if(searchTimeout)clearTimeout(searchTimeout);
+    const query = event.target.value.trim();
 
-        searchTimeout = setTimeout(()=>{
-            searchItems(query);
-        }, 1000);
-    }
+    if(searchTimeout) clearTimeout(searchTimeout);
+
+    searchTimeout = setTimeout(()=>{
+        searchItems(query);
+    }, 500);
 });

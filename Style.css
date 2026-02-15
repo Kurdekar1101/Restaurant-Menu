@@ -1,10 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
+    margin: 0;
+    padding-top: 70px;
 
 }
 
@@ -16,7 +19,13 @@ nav{
     color: white;
     padding: 1em;
     text-align: center;
-    height: 50px;
+    height: 70px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 .nav-right{
     display: flex;
@@ -61,21 +70,68 @@ nav{
 
 /* OFFER SECTION */
 .offer-section{
-    background-color: #333;
-    display: flex;
+    /* background-color: white; */
+    /* display: flex; */
     padding: 2em;
     height: 30rem;
-    justify-content: center;
-    align-items: center;
-    background-image: url("https://www.pixelstalk.net/wp-content/uploads/images5/4K-Food-Wallpaper-3840x2160-1-620x349.jpg");
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background-image: url("./Resource/4320605-hd_1920_1080_30fps.mp4");
     background-size:cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+}
+
+.offer-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.side-image{
+    padding: 0;
+    margin: 0;
+    height: 35rem;
+    padding-right: 2rem;
+}
+.side-image img{
+    height: 100%;
+    animation: floatImage 3s ease-in-out infinite;
+}
+@keyframes floatImage {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);  /* moves up */
+    }
+    100% {
+        transform: translateY(0px);    /* comes back down */
+    }
+}
+
+.slogan{
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centers button horizontally */
+    text-align: center;
+}
+/* H1 styling */
+.slogan h1{
+    color: orangered;
+    font-size: 3rem;   /* bigger */
+    margin-bottom: 1rem;
+}
+
+/* Paragraph styling */
+.slogan p{
+    max-width: 400px;   /* makes width smaller */
+    margin-bottom: 2rem;
 }
 
 .offercheckout-btn{
-    background-color: orangered;;
-    align-self: flex-end;
+    background-color: orangered;
     color: White;
     border: 2px solid white;
     padding: 1em 2em;
