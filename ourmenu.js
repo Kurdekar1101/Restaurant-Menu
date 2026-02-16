@@ -25,6 +25,7 @@ function populateMenu(foodItems){
         'starter':[],
         'beverages':[],
         'main-course':[],
+        'combos':[],
     }
     foodItems.forEach(item=>{
         if(item.best_seller === "yes"){
@@ -66,11 +67,11 @@ function createMenuItem(item){
             </div>
             <div onclick = "addtoCart('${item.id}', '${item.selling_price}', '${item.title}', '${item.imageurl}')" class="add-to-cart-btn">
             
-            <button onclick="addToCart('Pizza', 200)" class="cta-button">Add to Cart</button>
+            <button class="cta-button">Add to Cart</button>
             </div>
           </div>`;
           return html;
-        //   <button class="cta-button">Add to Cart</button>
+        //   <button class="cta-button">Add to Cart</button> //onclick="addToCart('Pizza', 200)"
 }
 
 

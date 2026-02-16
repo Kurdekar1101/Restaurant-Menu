@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Order Status</title>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="stylesheet" href="order.css">
+  <meta charset="UTF-8">
+  <title>Special Offers</title>
+  <link rel="stylesheet" href="offer.css">
 </head>
 <body>
+
     <header>
         <nav>
             <div class="nav-logo">
@@ -26,13 +27,38 @@
             </div>
         </nav>
     </header>
-    <div id="yourorder">
-    <h2>Your Order</h2>
-    <div id="order-details"></div>
-    <div class="status">Status: Delivered</div>
-    </div>
 
-     <footer class="footer">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>🔥 Mega Food Fest 2026</h1>
+      <p>Flat 50% OFF on all Main Courses</p>
+      <a href="./ourmenu.html"><button>Order Now</button></a>
+    </div>
+  </section>
+
+  <!-- Coupon Section -->
+  <section class="offer-card">
+    <h2>🎟 Use Coupon Code</h2>
+    <h3>FOODIE50</h3>
+    <p>Get 50% discount up to ₹200 on orders above ₹499.</p>
+  </section>
+
+  <!-- Discount Section -->
+  <section class="offer-card">
+    <h2>💸 Weekend Special</h2>
+    <h3>Buy 1 Get 1 Free</h3>
+    <p>Applicable on all beverages this Saturday & Sunday.</p>
+  </section>
+
+  <!-- Combo Section -->
+  <section class="offer-card">
+    <h2>🎉 Family Combo Bonanza</h2>
+    <h3>Flat ₹300 OFF</h3>
+    <p>On Family Biryani Combo + Free Dessert.</p>
+  </section>
+
+  <footer class="footer">
       <div class="footer-content">
         <!-- Logo Section -->
         <div class="footer-section logo-section">
@@ -43,9 +69,9 @@
         <div class="footer-section links-section">
           <h3>Quick Links</h3>
           <ul class="footer-links" type="none">
-            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="ourmenu.html">Our Menu</a></li>
             <li><a href="offer.html">Our Offers</a></li>
-            <li><a href="#about">Know What We Have Achieved</a></li>
+            <li><a href="knowus.html">Know What We Have Achieved</a></li>
           </ul>
         </div>
         <!-- Social & Subscription Section -->
@@ -77,49 +103,5 @@
 
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            let orderDetails = JSON.parse(localStorage.getItem("orderDetails")) || [];
-            if (orderDetails.length === 0) {
-                document.getElementById("order-details").innerHTML = "<p>No order found.</p>";
-                return;
-            }
-
-            let tableHTML = `
-                <table>
-                    <tr>
-                        <th>Item</th>
-                        <th>Quantity</th>
-                        <th>Price</th>
-                        <th>Total</th>
-                    </tr>
-            `;
-
-            let grandTotal = 0;
-
-            orderDetails.forEach(item => {
-                let total = item.price * item.quantity;
-                grandTotal += total;
-                tableHTML += `
-                    <tr>
-                        <td>${item.title}</td>
-                        <td>${item.quantity}</td>
-                        <td>₹${item.price}</td>
-                        <td>₹${total}</td>
-                    </tr>
-                `;
-            });
-
-            tableHTML += `
-                <tr>
-                    <td colspan="3" align="right"><strong>Grand Total</strong></td>
-                    <td><strong>₹${grandTotal}</strong></td>
-                </tr>
-                </table>
-            `;
-
-            document.getElementById("order-details").innerHTML = tableHTML;
-        });
-    </script>
 </body>
 </html>

@@ -6,6 +6,7 @@
     <title>Restaurent Menu App</title>
     <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStOB26e6FqhS8YWtkvN0L3cbFpupGF5VN8XA&s">
     <link rel="stylesheet" href="Style.css">
+    <script src="restaurant.js"></script>
 </head>
 <body>
     <header>
@@ -17,7 +18,7 @@
                 <ul class="nav-links" type="none">
                     <li><a href="Restaurent.html">Home</a></li>
                     <li><a href="ourmenu.html">Our Menu</a></li>
-                    <li><a href="#offers">Our Offers</a></li>
+                    <li><a href="offer.html">Our Offers</a></li>
                     <li><a href="knowus.html">Know Us</a></li>
                     <li><a href="order.html">Your Order</a></li>
                     <li><a href="cart.html">Cart</a></li>
@@ -42,10 +43,11 @@
                     similique suscipit et nisi dignissimos. Saepe perferendis, porro laboriosam corporis praesentium 
                     nesciunt eos corrupti?
                 </p>
-
-                <button class="offercheckout-btn">
+                <a href="./offer.html">
+                <button class="offercheckout-btn" >
                     Checkout All Offers
                 </button>
+                </a>
             </div>
             <div class="side-image">
                 <img src="./Resource/image.png">
@@ -71,7 +73,9 @@
         </div>
 
         <!-- Best Seller -->
-        <div class="menu-items">
+        <div class="menu-items" id="bestSellerItems"></div>
+
+        <!-- <div class="menu-items">
           <div class="menu-card">
             <img src="https://thumbs.dreamstime.com/b/pizza-slice-vegetarian-close-up-wood-board-black-background-38831160.jpg?w=768" alt="Best Seller Image">
             <div class="menu-card-content">
@@ -108,8 +112,8 @@
             </div>
           </div>
 
-        </div>
-      </div>
+        </div> -->
+      </div> 
 
 
 
@@ -117,9 +121,10 @@
         <div class="menu-category">
             <div class="category-header">
                 <h3>Trending</h3>
-                <button class="view-all-btn">view all</button>
+                <button class="view-all-btn" ><a href="ourmenu.html" style="text-decoration: none; color: white;">view all</a></button>
             </div>
-            <div class="menu-items">
+            <div class="menu-items" id="trendingItems"></div>
+            <!-- <div class="menu-items">
                 <div class="menu-card">
                     <img src="https://thumbs.dreamstime.com/b/indian-meal-punjabi-paneer-butter-masala-roti-indian-main-course-lunch-dinner-paneer-butter-masala-curry-roti-indian-109156151.jpg?w=768" alt="Trending Image">
                     <div class="menu-card-content">
@@ -154,17 +159,18 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
 
-        </div>
+        </div> 
 
         <!-- Starters -->
         <div class="menu-category">
             <div class="category-header">
                 <h3>Starters</h3>
-                <button class="view-all-btn">view all</button>
+                <button class="view-all-btn" ><a href="ourmenu.html" style="text-decoration: none; color: white;">view all</a></button>
             </div>
-            <div class="menu-items">
+            <div class="menu-items" id="starterItems"></div>
+            <!-- <div class="menu-items">
                 <div class="menu-card">
                     <img src="https://thumbs.dreamstime.com/b/vegtable-soup-1525920.jpg?w=768" alt="Starters Image">
                     <div class="menu-card-content">
@@ -199,7 +205,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
         </div>
 
 
@@ -209,7 +215,9 @@
                 <h3>Beverages</h3>
                 <button class="view-all-btn"><a href="ourmenu.html" style="text-decoration: none; color: white;">view all</a></button>
             </div>
-            <div class="menu-items">
+
+            <div class="menu-items" id="beveragesItems"></div>
+            <!-- <div class="menu-items">
                 <div class="menu-card">
                     <img src="https://thumbs.dreamstime.com/b/raspberry-mojito-cocktail-lime-mint-ice-cold-iced-refreshing-drink-beverage-closeup-92368054.jpg?w=768" alt="Beverages Image">
                     <div class="menu-card-content">
@@ -244,7 +252,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
         </div>
 
         <!-- Main Courses -->
@@ -253,7 +261,8 @@
                 <h3>Main Course</h3>
                 <button class="view-all-btn"><a href="ourmenu.html" style="text-decoration: none; color: white;">view all</a></button>
             </div>
-            <div class="menu-items">
+            <div class="menu-items" id="mainCourseItems"></div>
+            <!-- <div class="menu-items">
                 <div class="menu-card">
                     <img src="https://thumbs.dreamstime.com/b/indian-main-course-consisting-chole-chickpea-curry-peas-pulao-vegan-gluten-free-meal-chawal-punjabi-channa-masala-rice-109155986.jpg?w=768" alt="Main Courses Image">
                     <div class="menu-card-content">
@@ -288,7 +297,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
         </div>
 
         <!-- Combos -->
@@ -348,7 +357,7 @@
           <h3>Quick Links</h3>
           <ul class="footer-links" type="none">
             <li><a href="ourmenu.html">Our Menu</a></li>
-            <li><a href="#offers">Our Offers</a></li>
+            <li><a href="offer.html">Our Offers</a></li>
             <li><a href="knowus.html">Know What We Have Achieved</a></li>
           </ul>
         </div>
